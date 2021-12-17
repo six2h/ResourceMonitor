@@ -17,12 +17,6 @@
 		<java.version>11</java.version>
 	</properties>
 
-	<repositories>
-		<repository>
-			<id>jitpack.io</id>
-			<url>https://jitpack.io</url>
-		</repository>
-	</repositories>
 
 	<dependencies>
 		<dependency>
@@ -42,8 +36,8 @@
 	</dependency>
 		<dependency>
 			<groupId>com.github.oshi</groupId>
-			<artifactId>oshi</artifactId>
-			<version>v1.2</version>
+			<artifactId>oshi-core</artifactId>
+			<version>5.3.4</version>
 		</dependency>
 		<dependency>
 			<groupId>org.json</groupId>
@@ -70,6 +64,14 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>14</source>
+					<target>14</target>
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>
